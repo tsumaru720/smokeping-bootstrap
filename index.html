@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,8 +19,13 @@
     <style type="text/css">
     body {
       font-size: .875rem;
+      padding-bottom: 50px;
     }
 
+    html {
+        position: relative;
+        min-height: 100%;
+    }
     /*
     * Sidebar
     */
@@ -47,8 +51,8 @@
 
     @supports ((position: -webkit-sticky) or (position: sticky)) {
       .sidebar-sticky {
-	position: -webkit-sticky;
-	position: sticky;
+        position: -webkit-sticky;
+        position: sticky;
       }
     }
 
@@ -132,6 +136,27 @@
 
     .border-top { border-top: 1px solid #e5e5e5; }
     .border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+    /*
+    * Footer
+    */
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        clear: right;
+    }
+
+    .footer hr {
+        margin-bottom: 8px;
+    }
+
+    .footer p {
+        text-align: right;
+        margin-bottom: 0;
+    }
+
     </style>
   </head>
 
@@ -174,11 +199,16 @@
           <div id="smokebody">
             <P><##overview##></P>
             <P><##body##></P>
-	  </div>
+            </div>
         </main>
       </div>
     </div>
-
+    <footer class="footer">
+        <div class="container-fluid">
+            <hr>
+            <p class="text-muted">Smokeping template by <a href="https://www.simonmott.co.uk">Simon Mott</a></p>
+        </div>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
