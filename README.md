@@ -1,6 +1,6 @@
 # Bootstrap Smokeping template
 
-This is a template that's designed to replace the basepage.html file of your smokeping install. It should make the UI look less hidious.
+This is a template that's designed to replace the basepage.html file of your smokeping install. It should make the UI look less hideous.
 
 ## Screenshot
 
